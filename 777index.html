@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 200vh; /* Додали велику висоту для можливості прокрутки */
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 2px solid #333;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .static {
+            background-color: #FF5733;
+        }
+
+        .relative {
+            background-color: #33FF57;
+            position: relative;
+            top: -20px;
+            left: 20px;
+        }
+
+        .absolute {
+            background-color: #5733FF;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            z-index: 1;
+        }
+
+        .fixed {
+            background-color: #33FF88;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 2;
+        }
+    </style>
+    <title>CSS Positioning and z-index</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box static">Static</div>
+        <div class="box relative">Relative</div>
+        <div class="box absolute">Absolute</div>
+        <div class="box fixed">Fixed</div>
+    </div>
+</body>
+</html>
